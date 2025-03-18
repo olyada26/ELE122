@@ -17,7 +17,7 @@ int mysqrt (int number){
 	while (number/(control_number+1) > control_number) {
 	control_number += 1;
 	}
-	printf ("Integer sqyare root of %d = %d", number, control_number);
+	printf ("Integer square root of %d = %d", number, control_number);
 	
 }
 int main(void){
