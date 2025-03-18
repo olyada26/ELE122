@@ -14,7 +14,7 @@ Integer square root of 25 = 5
 
 int mysqrt (int number){
 	int control_number = 1 ;
-	while (number/control_number > control_number) {
+	while (number/(control_number+1) > control_number) {
 	control_number += 1;
 	}
 	printf ("Integer sqyare root of %d = %d", number, control_number);
