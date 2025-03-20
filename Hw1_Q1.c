@@ -18,7 +18,6 @@ int mysqrt (int number){
 	control_number += 1;
 	}
 	printf ("Integer square root of %d = %d", number, control_number);
-	
 }
 int main(void){
 	int number;
