@@ -8,26 +8,18 @@ int main(void){
 	scanf("%d",&number);
 	for (i=2 ; i<=number/2 ; i++){
 		a = number-i;
-		while (is_prime(i) && is_prime(a)){
+		if (is_prime(i) && is_prime(a)){
 			printf("%d = %d + %d\n", number , i , a);
-			i++;
-			a = number-i;
-
 		}
 	}	
 }
 
 int is_prime(int number){
-	int i,
-		control=0;
+	int i;
 	for (i=2 ; i<= number/2 ; i++){
 		if (number%i == 0){
-			control++;
+			return 0;
 		}
 	}
-	if (control>0){
-		return 0;
-	}else{
-		return 1;
-	}
+	return 1;
 }
