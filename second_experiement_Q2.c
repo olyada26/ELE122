@@ -12,6 +12,7 @@ int main(void){
 			printf("%d = %d + %d\n", number , i , a);
 			i++;
 			a = number-i;
+
 		}
 	}	
 }
